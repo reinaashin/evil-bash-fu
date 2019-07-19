@@ -1,0 +1,8 @@
+#!/bin/sh
+
+#Command specific to file products-simple.csv; looking for 'dad' 
+#Cut - extracting only info from column 2-brand 
+#tr - convert capitalized to lowercase 
+#grep - find matching keyword 
+
+cut -d "|" -f 2| tr A-Z a-z | grep 'dad'| sort | uniq
