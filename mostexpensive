@@ -1,5 +1,6 @@
 #!/bin/sh
 
 #This command is specific to "products-simple"; Price column 3
+#To answer the question, the asin of the most expensive item is: B01M2C9LU6
 
 sort -n -t "|" -k3
