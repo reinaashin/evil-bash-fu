@@ -1,0 +1,5 @@
+#!/bin/sh
+
+#This command is specific to "products-simple"; Price column 3
+
+sort -n -t "|" -k3
