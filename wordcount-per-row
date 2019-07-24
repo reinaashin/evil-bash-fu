@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#<tail -n +# filename> - use if need to start X row from top
+#pipe to awk print NF (NF = # of fields in row), $0 = print ALL columns 
+#sort in reverse numerical (desc) order for column 1 and create new file > newfilename
+#command only works if desired sorting column is in column1 (k1) 
+## tail -n +2 lowercase-brands.csv | awk '{print NF "  "  $0}' | sort -nr -k1 > brands-wordcount.csv
+
+awk '{print NF "  " $0}' | sort -nr -k1 
