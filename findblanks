@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#grep - insert in '' what you want to match 
+#awk -F for delimiter in this case | 
+#awk - print only column 1 in this case asin 
+# > create new file 
+#below command only applies to products-simple.csv due to column order
+#cat products-simple.csv | grep '||' | awk -F "|" '{print $1}' > brandless-products.txt
+
+grep '||' | awk -F "|" '{print $1}' 
