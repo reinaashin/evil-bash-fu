@@ -1,0 +1,10 @@
+#!/bin/sh
+
+#cut - delimiter "|", cut the 2nd column "brands"
+#sort
+#uniq - c - count how many times that line item show up 
+#> create new file 
+#below command only applies to specific file due to column layout 
+#cat products-simple.csv | cut -d "|" -f 2| sort | uniq -c > brand-counts.csv
+
+cut -d "|" -f 2 | sort | uniq -c 
